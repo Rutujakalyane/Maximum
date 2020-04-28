@@ -8,15 +8,15 @@ public class MaximumValue <T extends Comparable<T>> {
     private T second;
     private T third;
 
-    public MaximumValue() {
-    }
-
     public MaximumValue(T first, T second, T third) {
         this.first = first;
         this.second = second;
         this.third = third;
     }
 
+    public MaximumValue() {
+
+    }
     public T maximum(T first, T second, T third) {
         if (first.compareTo(second) > 0 && first.compareTo(third) > 0) {
             return first;
