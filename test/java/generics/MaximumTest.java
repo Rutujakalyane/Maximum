@@ -37,7 +37,12 @@ public class MaximumTest {
     @Test
     public void findingMaxValue_FromGiven_ThreeStrings_AtFirstPosition() {
         String maxValue = (String) maximumValue.maximum("Peach","Apple","Banana");
-        Assert.assertEquals((String) "Peach", maxValue);
+        Assert.assertEquals("Peach", maxValue);
+    }
+    @Test
+    public void findingMaxValue_FromGiven_ThreeStrings_AtSecondPosition() {
+        String maxValue = (String) maximumValue.maximum("Apple","Peach","Banana");
+        Assert.assertEquals("Peach", maxValue);
     }
 
 }
