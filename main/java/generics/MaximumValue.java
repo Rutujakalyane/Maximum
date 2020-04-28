@@ -26,14 +26,17 @@ public class MaximumValue <T extends Comparable<T>> {
             return third;
         }
     }
-
-    public <T extends Comparable<T>> T testMaximum() {
-        return (T) maximum(first, second, third);
-    }
-
     public T maximum(T... param) {
         Arrays.sort(param);
         return param[param.length - 1];
+    }
+    public <T extends Comparable<T>> T testMaximum() {
+        printMax(maximum(first, second, third));
+        return (T) maximum(first, second, third);
+    }
+
+    public void printMax(T max) {
+        System.out.println("Maximum Value : " + max);
     }
 }
 
