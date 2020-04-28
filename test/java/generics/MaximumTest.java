@@ -15,4 +15,10 @@ public class MaximumTest {
         Integer maxValue = maximumValue.maximum(5,8,3);
         Assert.assertEquals((Integer) 8, maxValue);
     }
+    @Test
+    public void findingMaxValue_FromGiven_ThreeIntegers_AtThirdPosition() {
+        MaximumValue maximumValue = new MaximumValue();
+        Integer maxValue = maximumValue.maximum(3,5,8);
+        Assert.assertEquals((Integer) 8, maxValue);
+    }
 }
