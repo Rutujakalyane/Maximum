@@ -37,7 +37,5 @@ public class MaximumTest {
         Object maxValue = (Object) maximumValue.maximum("Peach", "Banana","Apple","Kiwi");
         Assert.assertEquals((Object) "Peach", maxValue);
     }
-
-
 }
 
