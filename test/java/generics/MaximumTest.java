@@ -27,6 +27,11 @@ public class MaximumTest {
         Float maxValue = maximumValue.maximum(5.5f,4.4f,8.8f);
         Assert.assertEquals((Float) 8.8f, maxValue);
     }
-
+    @Test
+    public void findingMaxValue_FromGiven_ThreeFloats_AtSecondPosition() {
+        MaximumValue maximumValue = new MaximumValue();
+        Float maxValue = maximumValue.maximum(3.5f,8.8f,4.5f);
+        Assert.assertEquals((Float) 8.8f, maxValue);
+    }
    
 }
